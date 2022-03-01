@@ -1,18 +1,21 @@
 import { Link, Outlet } from 'react-router-dom';
+import "./App.css"
+
 
 function App() {
   return (
-    <div>
-      <h1>Starter App</h1>
+    <div id="App">
+      <h1>Links App</h1>
       <nav
         style={{
-          borderBottom:'1px solid'
+          borderTop:'3px solid',
+          borderBottom:'3px solid'
         }}
         >
-          <Link to='/home'>Home</Link> - {' '}
-          <Link to='/about'>About</Link>
+          <Link to='/'>Links</Link> - {' '}
+          <Link to='/about'>About</Link> - {' '}
+          <Link to='/links/new'>New link</Link>
         </nav>
-        <p>Outlet component here</p>
         <Outlet />
     </div>
   );
