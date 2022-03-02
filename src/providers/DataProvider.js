@@ -22,7 +22,7 @@ export const DataContext = React.createContext();
 
 const DataProvider = (props) => {
   const baseurl = 'https://link-app-sp22.herokuapp.com'
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState();
 
   // get links from api/db and update links state in UI
   const getLinks = async()=>{
@@ -85,6 +85,21 @@ const DataProvider = (props) => {
       alert('err occured')
     }
   }
+
+  // const [x, setLinks] = useState([])
+  // const deleteLink = (id)=>{
+    
+  //   let newLinks =x.filter(x=> x.id !==id)
+  //   setLinks(newLinks)
+
+
+
+
+
+
+
+
+
 
 
   // create an object that will be 'global state'
